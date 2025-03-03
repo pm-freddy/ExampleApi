@@ -14,6 +14,8 @@ public static class Startup
 
         builder.Services.AddSingleton<ISettingConfigurationService , SettingConfigurationService>();
 
+        var test = ConnectionHelper.GetConnectionStringFromBuilder(builder);
+
         builder.Services.AddDbContext<ExampleDbContext>(options =>
         {
             var connectionString = ConnectionHelper.GetConnectionStringFromBuilder(builder);

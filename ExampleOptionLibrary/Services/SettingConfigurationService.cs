@@ -21,7 +21,7 @@ namespace ExampleOptionLibrary.Services
         public IOptions<SettingsModel> GetDbSettings()
         {
             var settings = new SettingsModel();
-            _configuration.GetSection(ExampleConstants.DbSettingTitle).Bind(settings.DbSettings);
+            _configuration.GetSection(ExampleConstants.ExampleSettingTitle).Bind(settings);
 
             return Options.Create(settings);
         }
