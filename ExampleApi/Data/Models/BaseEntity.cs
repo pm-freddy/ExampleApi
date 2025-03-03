@@ -6,6 +6,7 @@ namespace ExampleApi.Data.Models
 {
     /// <summary>
     /// Base entity for all data models. In bigger projects, this model would probably be in a class library
+    /// Could be an abstract class, instead of a class with an interface. Interface exists for the purpose to work with it on generic methods
     /// </summary>
     public class BaseEntity : IBaseEntity
     {
