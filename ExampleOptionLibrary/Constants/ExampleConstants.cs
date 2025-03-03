@@ -5,6 +5,8 @@
     /// </summary>
     internal static class ExampleConstants
     {
+       internal const string ExampleSettingTitle = "ExampleSettings";
+       
        internal const string DbSettingTitle = "DbSettings";
        internal const string ExampleDbConnectionStringTitle = "ExampleDbConnectionString";
     }

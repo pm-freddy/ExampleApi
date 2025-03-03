@@ -16,7 +16,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ExampleOptionLibrary\ExampleOptionLibrary.csproj" />
-    <ProjectReference Include="..\OptionsHelper\ExampleOptionLibrary.csproj" />
   </ItemGroup>
 
 </Project>
