@@ -19,10 +19,7 @@ namespace ExampleApi.Services
         {
             try
             {
-
                 var savedEntity = await _dbContext.Examples.AddAsync(exampleEntity);
-
-                //TODO: Add Exception Handling
 
                 await _dbContext.SaveChangesAsync();
 
@@ -30,9 +27,7 @@ namespace ExampleApi.Services
             }
             catch (Exception ex)
             {
-
                 throw new Exception("Exception handling needs to be added");
-
             }
         }
 
